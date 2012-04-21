@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  title: MyString
+  description: MyText
+  category: MyString
+  progress: 1
+  task_id: 1
+  time_limit: 2012-04-08 02:22:36
+  image_url: MyString
+  status: MyString
+
+two:
+  title: MyString
+  description: MyText
+  category: MyString
+  progress: 1
+  task_id: 1
+  time_limit: 2012-04-08 02:22:36
+  image_url: MyString
+  status: MyString

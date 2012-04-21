@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @idea.title %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @idea.description %>
+</p>
+
+<p>
+  <b>Category:</b>
+  <%= @idea.category %>
+</p>
+
+<p>
+  <b>Progress:</b>
+  <%= @idea.progress %>
+</p>
+
+<p>
+  <b>Task:</b>
+  <%= @idea.task_id %>
+</p>
+
+<p>
+  <b>Time limit:</b>
+  <%= @idea.time_limit %>
+</p>
+
+<p>
+  <b>Image url:</b>
+  <%= @idea.image_url %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @idea.status %>
+</p>
+
+
+<%= link_to 'Edit', edit_idea_path(@idea) %> |
+<%= link_to 'Back', ideas_path %>

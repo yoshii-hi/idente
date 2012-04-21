@@ -1,0 +1,39 @@
+<h1>Listing ideas</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Time limit</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @ideas.each do |idea| %>
+  <tr class="<%= cycle('list_line_odd', 'list_line_even') %>">
+    <td class="list_description">
+      <dl>
+	<dt><%= idea.title %></dt>
+      </dl>
+    </td>
+    <td class="list_description">
+      <dl>    
+    	<dd><%= idea.time_limit.strftime("%Y/%m/%d %H:%M") %><dd>
+      </dl>
+    </td>
+    <td class="list_actions">
+      <%= link_to 'Show', idea %>
+      <%= link_to 'Edit', edit_idea_path(idea) %>
+      <%= link_to 'Destroy', idea, confirm: 'Are you sure?', method: :delete %>
+    </td>
+  </tr>
+<% end %>
+
+<br />
+<div id="side">
+        <%= @ideas[0].title %><br/>
+        <%= @ideas[0].description %>
+</div>
+</table>
+
+<%= link_to 'New Idea', new_idea_path %>
